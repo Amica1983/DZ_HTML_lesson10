@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  background: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 75px;
+  background: #222222;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.left_nav {
+  display: flex;
+  gap: 40px;
+}
+
+.right_nav {
+  display: flex;
+  gap: 33px;
+  position: relative;
+}
+
+.right_nav button:hover {
+  transition: all 0.5s;
+}
+
+.right_nav button:hover {
+  transform: scale(1.1);
+}
+
+.krug {
+  background: #f16d7f;
+  border-radius: 50%;
+  height: 19px;
+  width: 19px;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  right: -7px;
+}
+
+.krug p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  padding: 1px 5px 4px;
+}
+
+.mainContent {
+  background: #f1e4e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+}
+
+.mainContent h2 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #222;
+}
+
+.mainContent__right {
+  padding-left: 16px;
+  border-left: 12px solid #f16d7f;
+  max-width: 800px;
+}
+
+.mainContent__right h3 {
+  font-weight: 700;
+  color: #222;
+  font-size: 32px;
+}
+
+.mainContent__right h3 span {
+  color: #f16d7f;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 30px 70px;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu__header h3 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
+.menu__block h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #f16d7f;
+}
+
+.menu__block ul li {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f6e6e;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+
+.cards_list {
+  padding-top: 60px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.photo_card1 {
+  background-image: url(./img/for_girl.png);
+  width: 360px;
+  height: 260px;
+  transition: all 0.5s;
+}
+
+.photo_card2 {
+  background-image: url(./img/for_men.png);
+  width: 360px;
+  height: 260px;
+  transition: all 0.5s;
+}
+
+.photo_card3 {
+  background-image: url(./img/for_kid.png);
+  width: 360px;
+  height: 260px;
+  transition: all 0.5s;
+}
+
+.photo_card4 {
+  background-image: url(./img/accesor.png);
+  width: 1140px;
+  height: 180px;
+  transition: all 0.5s;
+}
+
+.shadow_card {
+  height: 100%;
+  width: 100%;
+  background: rgba(33, 22, 22, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contant_card p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.contant_card h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #f16d7f;
+  text-align: center;
+}
+
+.photo_card1:hover,
+.photo_card2:hover,
+.photo_card3:hover {
+  transform: scale(1.1);
+}
+
+.photo_card4:hover {
+  transform: scale(0.95);
+}
+.preheader h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #222;
+  text-align: center;
+  margin-top: 92px;
+}
+
+.preheader p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9f9f9f;
+  text-align: center;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.products_list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products_list .card {
+  background: #f8f8f8;
+  max-width: 360px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.product__shadow {
+  position: absolute;
+  background: rgba(58, 56, 56, 0.86);
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.product__shadow button {
+  display: flex;
+  gap: 11px;
+  border: 1px solid #fff;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  padding: 14px 16px;
+}
+
+.products_list .card:hover .product__shadow {
+  display: flex;
+}
+
+.products_list .discription {
+  padding: 24px;
+}
+
+.products_list .card h2 {
+  font-weight: 600;
+  font-size: 13px;
+  color: #000;
+}
+
+.products_list .card p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #5d5d5d;
+  margin-top: 16px;
+}
+
+p.price {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f16d7f !important;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.block_btn {
+  margin: 48px auto 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  color: #f26376;
+  border: 1px solid #ff6a6a;
+  padding: 15px 40px;
+  transition: all 0.5s;
+  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.btn:hover {
+  color: #fff;
+  background: #f26376;
+}
+
+.advantages {
+  background: #222224;
+}
+
+.advantages__list {
+  display: flex;
+  gap: 30px;
+  padding-top: 103px;
+  padding-bottom: 104px;
+}
+
+.advantages__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+  padding: 0 40px;
+  transition: all 0.5s;
+}
+
+.advantages__card h2 {
+  font-weight: 400;
+  font-size: 19px;
+  color: #fbfbfb;
+  margin-top: 28px;
+  transition: all 0.5s;
+}
+
+.advantages__card img {
+  transition: all 0.5s;
+}
+
+.advantages__card:hover img {
+  transform: scale(1.2);
+}
+
+.advantages__card:hover h2 {
+  color: #f16d7f;
+}
+
+.advantages__card p {
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  color: #fbfbfb;
+  margin-top: 16px;
+}
+
+.subscribe {
+  background-image: url(./img/photo\ subscribe.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe__block {
+  display: flex;
+  gap: 223px;
+  align-content: center;
+  align-items: center;
+  padding-top: 97px;
+  padding-bottom: 126px;
+}
+
+.subscribe__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.subscribe_block1 {
+  max-width: 360px;
+}
+.subscribe_block2 {
+  max-width: 557px;
+}
+
+.subscribe__card p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe__card .cursive {
+  font-style: italic;
+}
+.subscribe__card h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167%;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe__card h3 {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.subscribe__btn {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__block form {
+  background: #e1e1e1;
+
+  border-radius: 50px 0px 0px 50px;
+}
+
+.subscribe__block form input {
+  font-weight: 400;
+  font-size: 14px;
+  color: #222224;
+  opacity: 0.67;
+  height: 49px;
+  padding: 7px 7px 7px 22px;
+}
+
+.subscribe__block button {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  padding: 7px;
+  background: #e05c6e;
+  border-radius: 0px 50px 50px 0px;
+  height: 49px;
+  width: 100px;
+}
+
+.footer__container {
+  background: #222224;
+}
+
+.footer__blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.footer__prava p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #fbfbfb;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 7px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+
+  .right_nav {
+    gap: 25px;
+  }
+
+  .mainContent h2 {
+    font-size: 44px;
+  }
+
+  .mainContent__right h3 {
+    font-size: 24px;
+  }
+
+  .mainContent img {
+    max-width: 386px;
+  }
+
+  .mainContent__right {
+    max-width: 386px;
+  }
+
+  .cards_list {
+    gap: 18px;
+  }
+
+  .photo_card1,
+  .photo_card2,
+  .photo_card3 {
+    width: 233px;
+    height: 167px;
+  }
+
+  .photo_card4 {
+    background-image: url(./img/accesor.png);
+    width: 735px;
+    height: 116px;
+  }
+
+  .preheader h2 {
+    margin-top: 109px;
+  }
+
+  .products_list {
+    gap: 16px;
+  }
+
+  .products_list .discription {
+    padding: 25px 28px 20px 16px;
+  }
+
+  .block_btn {
+    margin: 32px auto 70px;
+  }
+
+  .advantages__list {
+    display: flex;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe__block {
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 219px;
+  }
+}
+
+@media (max-width: 766px) {
+  .container {
+    max-width: 359px;
+  }
+
+  .krug {
+    display: none;
+  }
+
+  button.hide_img {
+    display: none !important;
+  }
+
+  .mainContent {
+    height: 363px;
+  }
+
+  .mainContent img {
+    display: none;
+  }
+
+  .mainContent h2 {
+    font-size: 38px;
+  }
+
+  .mainContent__right h3 {
+    font-size: 20px;
+  }
+
+  .cards_list {
+    gap: 32px;
+    padding-top: 64px;
+  }
+
+  .photo_card1,
+  .photo_card2,
+  .photo_card3 {
+    width: 343px;
+    height: 247px;
+  }
+
+  .photo_card4 {
+    width: 343px;
+    height: 111px;
+    background-position: center;
+  }
+
+  .preheader h2 {
+    margin-top: 64px;
+  }
+
+  .products_list {
+    gap: 16px;
+  }
+
+  .products_list .discription {
+    padding: 23px 28px 20px 16px;
+  }
+
+  .block_btn {
+    margin: 40px auto 85px;
+  }
+
+  .advantages__list {
+    display: flex;
+    gap: 46px;
+    padding-top: 48px;
+    padding-bottom: 81px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe__block {
+    flex-direction: column;
+    gap: 59px;
+    padding-top: 64px;
+    padding-bottom: 110px;
+  }
+
+  .subscribe__card p {
+    font-size: 18px;
+  }
+
+  .subscribe__card h2 {
+    font-size: 24px;
+  }
+
+  .subscribe__card h3 {
+    font-size: 14px;
+  }
+
+  .footer__blocks {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0px 9px;
+  }
+}
